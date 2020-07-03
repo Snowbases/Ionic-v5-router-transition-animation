@@ -15,6 +15,14 @@
 
   <div id="container">
     <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+
+    <!-- Router direction forward/back -->
+    <ion-button [routerLink]="['/details']" routerDirection="forward" [routerAnimation]="this.slideRouterAnimation"
+      mode="md" expand="block" fill="solid" color="primary">
+      <ion-label color="light" slot="start">Navigate to details page</ion-label>
+    </ion-button>
+
+    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer"
+        href="https://ionicframework.com/docs/components">UI Components</a></p>
   </div>
 </ion-content>

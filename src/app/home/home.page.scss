@@ -6,6 +6,23 @@
   right: 0;
   top: 50%;
   transform: translateY(-50%);
+
+  ion-button {
+    --border-radius: 10px;
+    --box-shadow: 0px 5px 7px rgba(23, 131, 251, 0.25);
+    height: 3em;
+    width: 80vw;
+    margin: 0.4em auto;
+
+    ion-label {
+      text-transform: capitalize;
+      font-family: sans-serif;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 18px;
+      line-height: 24px;
+    }
+  }
 }
 
 #container strong {
