@@ -1,0 +1,13 @@
+{
+  "appId": "com.mursyidworld.rta",
+  "appName": "ionic-v5-router-transition-animation",
+  "bundledWebRuntime": false,
+  "npmClient": "npm",
+  "webDir": "www",
+  "plugins": {
+    "SplashScreen": {
+      "launchShowDuration": 0
+    }
+  },
+  "cordova": {}
+}

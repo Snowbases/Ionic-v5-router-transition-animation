@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { AnimationController } from '@ionic/angular';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -10,6 +11,8 @@ export class HomePage {
 
   // This code was inspired from mhartington's github repo, https://github.com/mhartington/v5-animations
   slideRouterAnimation = (_: HTMLElement, opts: any) => {
+    console.log('opts', opts);
+
     const backDirection = opts.direction === 'back';
     const enteringEl = opts.enteringEl;
     const leavingEl = opts.leavingEl;
@@ -71,7 +74,9 @@ export class HomePage {
   };
 
   constructor(
-    public animationController: AnimationController
-  ) { }
+    public animationController: AnimationController,
+    public router: Router
+  ) {
+  }
 
 }
